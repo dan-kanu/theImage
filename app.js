@@ -35,6 +35,7 @@ $(function()
           $('#bg1').css('background-image', 'url(' + e.target.result + ')').css('background-size', 'cover');
           $('.hero-image, .cta').css('background-image', 'url(' + e.target.result + ')');
           $('#cta-cover').css('background-image', 'url(' + e.target.result + ')').css('background-size', 'cover');
+          $('#paraSection').css('background-image', 'url(' + e.target.result + ')').css('background-size', 'cover');
          };
      
      reader.readAsDataURL(file);

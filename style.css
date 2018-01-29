@@ -1,3 +1,14 @@
+
+
+   body {
+   padding-top: 100px;
+   }
+   @media (min-width: 992px) {
+   body {
+   padding-top: 100px;
+   }
+   }
+
 #dashboard{
     height:150px;
 }
@@ -11,7 +22,7 @@
 div#hero-content {
     text-align: center;
     padding: 200px 0 !important;
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.7));
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.7)), fixed;
     background-attachment: fixed;
     color: #fff;
 }
@@ -27,6 +38,20 @@ background-color: #734de1;
 
 #section-1 p{
     font-size:20px;
+}
+
+
+#paraSection{
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.7));
+height: 600px;
+background-attachment: fixed;
+
+}
+
+#innerparaSection{
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.7));
+    width: 100%;
+    height: 100%;
 }
 
 .cta{
