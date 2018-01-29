@@ -1,11 +1,135 @@
+#dashboard{
+    height:150px;
+}
 #left-sidebar{
-    background-color:#60DED1;
+    background-color:rgba(42, 43, 48, 0.048);
     height: 100%;
-
+}
+.bg1{
+    width: 100%;
+}
+div#hero-content {
+    text-align: center;
+    padding: 200px 0 !important;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.7));
+    background-attachment: fixed;
+    color: #fff;
 }
 
-.bg1{
-    height: 600px;
+#section-1 {
+    padding: 60px 0;
+    color:#fff;
+    
+background-color: #734de1;
+    background-color: rgba(115,77,225,1);
+    
+}
+
+#section-1 p{
+    font-size:20px;
+}
+
+.cta{
+    background-color: rgb(248, 248, 248);
+    height: 160px;
+    margin: 10px;
+    background-repeat:no-repeat;
+}
+
+#cta-auto{
+    background-size: auto;
+}
+
+#cta-cover{
+    background-size: cover;
+}
+
+#cta-contain{
+    background-size: contain;
+}
+
+.shine-through {
     width: 100%;
-    background-color: aquamarine
+    height: 600px;
+    clear: left;
+    position: relative;
+    overflow: hidden;
+}
+.shine-through:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 5999;
+    opacity: .75;
+    -webkit-box-shadow: inset 0 0 0 110px white,inset 0 0 0 41px rgba(0,0,0,.1),inset 0 0 20px 41px rgba(0,0,0,.2);
+    box-shadow: inset 0 0 0 110px white,inset 0 0 0 41px rgba(0,0,0,.1),inset 0 0 20px 41px rgba(0,0,0,.2);
+    filter: alpha(opacity=7);
+}
+.crop-image {
+    object-fit: cover;
+    max-width: 2000px;
+}
+.avatar-draggable {
+   position:relative;
+    left:0;
+    top:0;
+    width:320px;
+    height:320px;
+}
+.shine-through img {
+   position:absolute;
+    left:0;
+    top:0;
+}
+input[name="avatar"] {
+   width:100%;
+    height:100%;
+    position: absolute;
+    cursor:pointer;
+    font-size:72px;
+    opacity:0;
+    z-index:10;
+    left:0;
+    top:0;
+}
+.upload-button span {
+   float:left;
+    z-index:1;
+    color:white;
+    padding:4px;
+    line-height:24px;
+}
+.image-selector {
+   display:block;
+    position:relative;
+    height:32px;
+}
+.upload-button {
+   overflow:hidden;
+    border:1px dashed blue;
+    border-radius:10px;
+    width:auto;
+    height:auto;
+    float:left;
+    position:relative;
+    display:block;
+    background: #1e5799;
+   /* Old browsers */
+    background: -moz-linear-gradient(45deg, #1e5799 0%, #2989d8 41%, #207cca 61%, #7db9e8 100%);
+   /* FF3.6+ */
+    background: -webkit-gradient(linear, left bottom, right top, color-stop(0%,#1e5799), color-stop(41%,#2989d8), color-stop(61%,#207cca), color-stop(100%,#7db9e8));
+   /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(45deg, #1e5799 0%,#2989d8 41%,#207cca 61%,#7db9e8 100%);
+   /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(45deg, #1e5799 0%,#2989d8 41%,#207cca 61%,#7db9e8 100%);
+   /* Opera 11.10+ */
+    background: -ms-linear-gradient(45deg, #1e5799 0%,#2989d8 41%,#207cca 61%,#7db9e8 100%);
+   /* IE10+ */
+    background: linear-gradient(45deg, #1e5799 0%,#2989d8 41%,#207cca 61%,#7db9e8 100%);
+   /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
+   /* IE6-9 fallback on horizontal gradient */
 }
