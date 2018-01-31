@@ -14,7 +14,21 @@ btn.addEventListener("click", function(){
     
 } );
 
+var elem = document.querySelector('#section-fullHero > div.row > div:nth-child(1) > input[type="range"]');
+var slider2= document.querySelector('#section-fullHero > div.row > div:nth-child(2) > input[type="range"]');
+var slider3= document.querySelector('#section-fullHero > div.row > div:nth-child(3) > input[type="range"]');
 
+var rangeValue = function(){
+  var newValue = elem.value;
+  var newValue = slider2.value;
+  var target = document.querySelector('.value');
+ 
+  document.getElementById("bg1").style.backgroundPositionX=elem.value+"px";
+  document.getElementById("bg1").style.backgroundPositionY=slider2.value+"px";
+  console.log(elem.value);
+}
+
+elem.addEventListener("input", rangeValue);
 
 $(function()
  {
@@ -29,15 +43,16 @@ $(function()
          reader.onload = function(e)
          {
         //   $('#bgImg > img').attr('src', e.target.result);
-          $('#bgImg2 > img').attr('src', e.target.result);
+          $('#bgImg2 > img, #og-image > img').attr('src', e.target.result);
           $('.bg1 > img').attr('src', e.target.result);
           $('#img1 > img').attr('src', e.target.result);
           $('#bg1').css('background-image', 'url(' + e.target.result + ')').css('background-size', 'cover');
-          $('.hero-image, .cta').css('background-image', 'url(' + e.target.result + ')');
+          $('.hero-image, .cta, #frame').css('background-image', 'url(' + e.target.result + ')');
           $('#cta-cover').css('background-image', 'url(' + e.target.result + ')').css('background-size', 'cover');
           $('#paraSection').css('background-image', 'url(' + e.target.result + ')').css('background-size', 'cover');
+          console.log(elem.value);
          };
-     
+         console.log(elem.value);
      reader.readAsDataURL(file);
    });
 
