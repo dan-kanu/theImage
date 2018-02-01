@@ -20,15 +20,29 @@ var slider3= document.querySelector('#section-fullHero > div.row > div:nth-child
 
 var rangeValue = function(){
   var newValue = elem.value;
-  var newValue = slider2.value;
+  var newValue2 = slider2.value;
+  var newValue3 = slider3.value;
+  var bgXpos = document.getElementById('bgXpos');
+  var bgYpos = document.getElementById('bgYpos');
+  var bgZpos = document.getElementById('bgZpos');
+
   var target = document.querySelector('.value');
  
   document.getElementById("bg1").style.backgroundPositionX=elem.value+"px";
   document.getElementById("bg1").style.backgroundPositionY=slider2.value+"px";
-  console.log(elem.value);
+  document.getElementById("bg1").style.backgroundSize=slider3.value+"%";
+  console.log("Background-Pos-X: " +  elem.value);
+  console.log("Background-Pos-Y: " +  slider2.value);
+  console.log("Background-Size: " + slider3.value + "%");
+
+  bgXpos.innerHTML=elem.value;
+  bgYpos.innerHTML=slider2.value;
+  bgZpos.innerHTML=slider3.value;
 }
 
 elem.addEventListener("input", rangeValue);
+slider2.addEventListener("input", rangeValue);
+slider3.addEventListener("input", rangeValue);
 
 $(function()
  {
@@ -55,6 +69,11 @@ $(function()
          console.log(elem.value);
      reader.readAsDataURL(file);
    });
+
+/* RESIZ */
+   $( function() {
+    $( "#resizable" ).resizable();
+  } );
 
 /**DRAGGABLE */
    var dragg = function(){

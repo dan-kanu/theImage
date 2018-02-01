@@ -8,6 +8,7 @@
       <title>BGImage</title>
       <!-- Bootstrap core CSS -->
       <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+      <link rel="stylesheet" href="https://code.jquery.com/ui/1.8.20/themes/base/jquery-ui.css" type="text/css" media="all" />
       <link href="style.css" rel="stylesheet">
       <!-- Custom styles for this template -->
    
@@ -124,7 +125,7 @@
           <div class="bg1" id="bg1">
              <div id="hero-content">
                 <h1>
-                   Lorem ipsum dolor sit amet
+                   Background Positioning 
                 </h1>
                 <h4>
                    veniam, quis nostrud exercitation ullamco laboris nisi
@@ -135,23 +136,35 @@
 
              </div>
           </div>
-          <div class="row">
-           
-                <div class="col-md-4">
-                  <p>Slide Left to right</p>
+          <div class="row" id="slider-container">
+              
+                <div class="col-md-4 slider-content" id>
+                  <h4>Slide Left to right</h4>
                     <input type="range" id="leftRight" min="-1000" max="1000" step="1" value="0">
+                    
                 </div>
-                <div class="col-md-4">
-                    <p>Slide up and down</p>
+                <div class="col-md-4 slider-content">
+                    <h4>Slide up and down</h4>
                     <input type="range" min="-1000" max="1000" step="1" value="0">
                 </div>
-                <div class="col-md-4">
-                    <p>Zoom in and out</p>
-                    <input type="range" min="-1000" max="1000" step="1" value="0">
+                <div class="col-md-4 slider-content">
+                    <h4>Zoom in and out</h4>
+                    <input type="range" min="0" max="200" step="1" value="100">
                 </div>
             
               
              <div class="container  ">
+               <div>
+                 <p>
+                   Background-Position X: <span id="bgXpos"></span>px;
+                 </p>
+                 <p>
+                    Background-Position Y: <span id="bgYpos"></span>px;
+                  </p>
+                  <p>
+                      Background-Size: <span id="bgZpos"></span>%;
+                    </p>
+               </div>
               <p>
                    vulputate ut. Semper quis lectus nulla at volutpat. Elementum integer enim neque volutpat ac tincidunt vitae semper. Mauris ultrices eros in cursus turpis massa tincidunt dui. Auctor eu augue ut lectus arcu bibendum at. Placerat in egestas erat imperdiet sed euismod nisi. Neque sodales ut etiam sit. Semper viverra nam libero justo. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Tincidunt augue interdum velit euismod in pellentesque massa. Vel eros donec ac odio tempor orci dapibus ultrices. Enim sed faucibus turpis in. Tellus id interdum velit laoreet.
                 </p>
@@ -159,32 +172,31 @@
           </div>
        </section>
 
-      <div class="row" id="main-stage">
-         <!-- Page Content -->
-         <div class="container">
-            
+      <section id="section-shinethrough">
+          <div class="row" id="main-stage">
+              <!-- Page Content -->
+              <div class="container">
+                 
+           
+                 <div class="row">
+                    <div class="col-lg-12 text-center">
+                       
+                       <button class="btn btn-primary" id="mybtn">Click Me</button>
+                       <div class="shine-through">
+                          <div class="avatar-draggable bg1">
+                             <img  class="crop-image" />
+                          </div>
+                       </div>
+                       <div>
+                          <button class="btn">Auto</button>
+                       </div>
+                       <div id="animal-info"></div>
+                    </div>
+                 </div>
+              </div>
+           </div>
+      </section>
       
-            <div class="row">
-               <div class="col-lg-12 text-center">
-                  <div id="bgImg2">
-                     <img  width="50%"/>
-                  </div>
-                  <button class="btn btn-primary" id="mybtn">Click Me</button>
-                  <div class="shine-through">
-                     <div class="avatar-draggable bg1">
-                        <img  class="crop-image" />
-                     </div>
-                  </div>
-                  <div>
-                     <button class="btn">Auto</button>
-                     <button class="btn">Auto</button>
-                     <button class="btn">Auto</button>
-                  </div>
-                  <div id="animal-info"></div>
-               </div>
-            </div>
-         </div>
-      </div>
       <section id="paraSection">
         <div id-"innerparaSection">
 
@@ -198,6 +210,10 @@
         </div>
       </section>
       <!-- Bootstrap core JavaScript -->
+      
+
+      <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+      <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       <script src="vendor/jquery/jquery.min.js"></script>
       <script src="app.js"></script>
       <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

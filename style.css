@@ -52,7 +52,7 @@ section#section-bgsize {
     display: block;
     -webkit-appearance: none;
     background-color: #bdc3c7;
-    width: 300px;
+    width: 200px;
     height: 5px;
     border-radius: 5px;
     margin: 0 auto;
@@ -60,7 +60,7 @@ section#section-bgsize {
   }
   input[type="range"]::-webkit-slider-thumb {
     -webkit-appearance: none;
-    background-color: #e74c3c;
+    background-color: #e7cd3c;
     width: 30px;
     height: 30px;
     border-radius: 50%;
@@ -70,13 +70,24 @@ section#section-bgsize {
   }
   ​ input[type="range"]::-webkit-slider-thumb:hover {
     background-color: white;
-    border: 2px solid #e74c3c;
+    border: 2px solid #e7cd3c;
   }
   input[type="range"]::-webkit-slider-thumb:active {
     transform: scale(1.6);
   }
   
+  .slider-content {
+    text-align: center;
+    height: 150px;
+}
 
+.col-md-4.slider-content h4 {
+    margin: 32px;
+}
+
+#slider-container{
+    margin: 60px 0;
+}
 
 #dashboard{
     height:150px;
@@ -91,7 +102,7 @@ section#section-bgsize {
 div#hero-content {
     text-align: center;
     padding: 200px 0 !important;
-    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.7)), fixed;
+    background: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.7));
     background-attachment: fixed;
     color: #fff;
 }
@@ -123,11 +134,12 @@ background-attachment: fixed;
     height: 100%;
 }
 
-.cta{
-    background-color: rgb(248, 248, 248);
+.cta {
+    background-color: rgb(181, 181, 181);
     height: 160px;
+    border: 1px solid;
     margin: 10px;
-    background-repeat:no-repeat;
+    background-repeat: no-repeat;
 }
 
 #cta-auto{
@@ -227,3 +239,4 @@ input[name="avatar"] {
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#7db9e8',GradientType=1 );
    /* IE6-9 fallback on horizontal gradient */
 }
+
