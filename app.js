@@ -1,18 +1,4 @@
-var ourRequest = new XMLHttpRequest();
 
-var btn = document.getElementById('mybtn');
-
-btn.addEventListener("click", function(){
-    ourRequest.open('GET', 'https://learnwebcode.github.io/json-example/animals-1.json')
-
-    ourRequest.onload = function(){
-        var ourData = JSON.parse(ourRequest.responseText);
-        console.log(ourData[0]);
-
-    }
-    ourRequest.send();
-    
-} );
 
 var elem = document.querySelector('#section-fullHero > div.row > div:nth-child(1) > input[type="range"]');
 var slider2= document.querySelector('#section-fullHero > div.row > div:nth-child(2) > input[type="range"]');
@@ -61,7 +47,7 @@ $(function()
           $('.bg1 > img').attr('src', e.target.result);
           $('#img1 > img').attr('src', e.target.result);
           $('#bg1').css('background-image', 'url(' + e.target.result + ')').css('background-size', 'cover');
-          $('.hero-image, .cta, #frame').css('background-image', 'url(' + e.target.result + ')');
+          $('.hero-image, .cta, #frame, .fullCTA').css('background-image', 'url(' + e.target.result + ')');
           $('#cta-cover').css('background-image', 'url(' + e.target.result + ')').css('background-size', 'cover');
           $('#paraSection').css('background-image', 'url(' + e.target.result + ')').css('background-size', 'cover');
           console.log(elem.value);

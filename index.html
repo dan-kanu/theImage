@@ -11,17 +11,16 @@
       <link rel="stylesheet" href="https://code.jquery.com/ui/1.8.20/themes/base/jquery-ui.css" type="text/css" media="all" />
       <link href="style.css" rel="stylesheet">
       <!-- Custom styles for this template -->
-   
    </head>
    <body>
       <!-- Navigation -->
-      <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+      <nav class="navbar navbar-expand-lg ">
          <div class="container">
-            <a class="navbar-brand" href="#"><img src="BG.png" width="40%"></a>
+            <a class="navbar-brand" href="#"><img src="Logo/bgImage_logo_v3.png" width="30%"></a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse" id="navbarResponsive">
+           <!-- <div class="collapse navbar-collapse" id="navbarResponsive">
                <ul class="navbar-nav ml-auto">
                   <li class="nav-item active">
                      <a class="nav-link" href="#">Home
@@ -38,180 +37,192 @@
                      <a class="nav-link" href="#">Contact</a>
                   </li>
                </ul>
-            </div>
+            </div> -->
          </div>
       </nav>
-      <!-- Left Sidebar -->
-      <section id="dashboard">
-         <div  class="" id="left-sidebar">
-            <div class="container">
-               <h3>Please upload the Image you want to use</h3>
-               <div id="bgImg">
-                  <img  width="50%"/>
-                  <input type="file" class= />
-               </div>
-            </div>
-         </div>
-      </section>
-      <!-- Main Staget -->
-      <!-- First Section-->
+   
+       <div id="content">
+         <!-- First Section-->
       <section id="section-1">
-         <div id="background-css-info">
-            <div class="container">
-               <h2>Background Image</h2>
-               <p>/'<strong><em>bak</em></strong>-ground <strong><em>im</em></strong>-ij/</p>
-               <p>
-                  The background-image property sets one or more background images for an element.
-                  <a target="_blank" href="https://www.w3schools.com/cssref/pr_background-image.asp">[source]</a>
-               </p>
-               <p>The two rectangle below are examples of a div element.</p>
-               <div class="row" id="sample-container">
-                <div class="col-md-4" id="og-image">
-                  <img width="100%"/>
-                  <h4>The Image</h4>
-                </div>
-                <div class="col-md-4">
-                   <div id="">
-                     
-                     <div id="blank-frame" class="sample-frame">
-                        
-                     </div>
-                     <h4>The Div - Without a Background Image</h4>
+          <div id="background-css-info">
+             <div class="container">
+                <h1 class="headers">Background Image</h1>
+                <p>/'<strong><em>bak</em></strong>-ground <strong><em>im</em></strong>-ij/</p>
+                <p>
+                   The background-image property sets one or more background images for an element.
+                   <a target="_blank" href="https://www.w3schools.com/cssref/pr_background-image.asp">[source]</a>
+                </p>
+                <div class="container">
+                   <h3>Please upload the Image you want to use</h3>
+                   <div id="bgImg">
+                       <div class="" id="og-image">
+                           <img width="40%"/>
+                        </div>
+                      <input type="file" class= />
                    </div>
-                </div>
-                <div class="col-md-4" id="img1">
                    
-                   <div id="frame" class="sample-frame">
-                      
-                  </div>
-                  <h4>The Div - With a Background image </h4>
                 </div>
              </div>
-            </div>
-         </div>
-      </section>
-
-      <!-- -->
-      <section id="section-bgsize">
-        <div class="container">
-            <h2>Background Size</h2>
-            <p>
-               The background-size property specifies the size of the background images.
-               There are four different syntaxes you can use with this property: the keyword syntax ("auto", "cover" and "contain"), the one-value syntax (sets the width of the image (height becomes "auto"), the two-value syntax (first value: width of the image, second value: height), and the multiple background syntax (separated with comma). <a target="_blank" href="https://www.w3schools.com/cssref/css3_pr_background-size.asp">[source]</a>
-            </p>
-            <div class="row">
-               <div class="col-md ">
-                  Auto
-                  <div class="cta" id=" cta-auto">
-                  </div>
-               </div>
-               <div class="col-md ">
-                  Cover
-                  <div  class="cta" id="cta-cover">
-                  </div>
-               </div>
-               <div class="col-md ">
-                  Contain
-                  <div  class="cta" id="cta-contain">
-                  </div>
-               </div>
-            </div>
-        </div>
-      </section>
-
-      <section id="section-fullHero">
+          </div>
+       </section>
+       <section id="sample-container">
+          <div class="container">
+             <div class="row">
+               <h2 class="headers">Applying our Image as a Background</h2>
+             </div>
+             <div class="row">
+                 <p>The two rectangle below are examples of a div element. The div element  on the right is using our image as backgound image while the div on the left is not assigned a background image.</p>
+                <p>
+                   <strong>*Notice</strong> the size and demensions of the background image is, often, determined by  the size, demension and <strong><em>"Background-size"</em></strong> property of the div or the html element that is using it as background image. 
+                </p> 
+             </div>
+             <div class="row">
+                   <div class="col-md-6">
+                         <div id="blank-frame" class="sample-frame">
+                         </div>
+                         <p class="muted">The Div - Without a Background Image</p>
+                   </div>
+                   <div class="col-md-6" id="img1">
+                      <div id="frame" class="sample-frame">
+                      </div>
+                      <p class="muted">The Div - With a Background image <p>
+                   </div>
+                
+             </div>
+          </div>
+       </section>
+       <!-- -->
+       <section id="section-bgsize">
+          <div class="container">
+             <h2 id="intro" class="headers">Background Size</h2>
+             <p>
+                The background-size property specifies the size of the background images.
+                There are four different syntaxes you can use with this property: the keyword syntax ("auto", "cover" and "contain"), the one-value syntax (sets the width of the image (height becomes "auto"), the two-value syntax (first value: width of the image, second value: height), and the multiple background syntax (separated with comma). <a target="_blank" href="https://www.w3schools.com/cssref/css3_pr_background-size.asp">[source]</a>
+             </p>
+             <div class="row">
+                <div class="col-md ">
+                   Auto
+                   <div class="cta" id=" cta-auto">
+                   </div>
+                </div>
+                <div class="col-md ">
+                   Cover
+                   <div  class="cta" id="cta-cover">
+                   </div>
+                </div>
+                <div class="col-md ">
+                   Contain
+                   <div  class="cta" id="cta-contain">
+                   </div>
+                </div>
+             </div>
+          </div>
+       </section>
+       <section id="section-fullHero">
           <div id="header1">
           </div>
           <div class="bg1" id="bg1">
              <div id="hero-content">
-                <h1>
+                <h2 class="headers">
                    Background Positioning 
-                </h1>
+                </h2>
                 <h4>
                    veniam, quis nostrud exercitation ullamco laboris nisi
                 </h4>
-                <button class="btn btn-warning">I do nothing</button>
-                <button class="btn btn-warning">I do nothing</button>
-         
-
+                <div>
+                   <p>
+                      Background-Position X: <span id="bgXpos"></span>px;
+                   </p>
+                   <p>
+                      Background-Position Y: <span id="bgYpos"></span>px;
+                   </p>
+                   <p>
+                      Background-Size: <span id="bgZpos"></span>%;
+                   </p>
+                </div>
+                <button class="btn btn-primary">I do nothing</button>
+                
              </div>
           </div>
           <div class="row" id="slider-container">
-              
-                <div class="col-md-4 slider-content" id>
-                  <h4>Slide Left to right</h4>
-                    <input type="range" id="leftRight" min="-1000" max="1000" step="1" value="0">
-                    
-                </div>
-                <div class="col-md-4 slider-content">
-                    <h4>Slide up and down</h4>
-                    <input type="range" min="-1000" max="1000" step="1" value="0">
-                </div>
-                <div class="col-md-4 slider-content">
-                    <h4>Zoom in and out</h4>
-                    <input type="range" min="0" max="200" step="1" value="100">
-                </div>
-            
-              
-             <div class="container  ">
-               <div>
-                 <p>
-                   Background-Position X: <span id="bgXpos"></span>px;
-                 </p>
-                 <p>
-                    Background-Position Y: <span id="bgYpos"></span>px;
-                  </p>
-                  <p>
-                      Background-Size: <span id="bgZpos"></span>%;
-                    </p>
-               </div>
-              <p>
+             <div class="col-md-4 slider-content" id>
+                <h4>Slide Left to right</h4>
+                <input type="range" id="leftRight" min="-1000" max="1000" step="1" value="0">
+             </div>
+             <div class="col-md-4 slider-content">
+                <h4>Slide up and down</h4>
+                <input type="range" min="-1000" max="1000" step="1" value="0">
+             </div>
+             <div class="col-md-4 slider-content">
+                <h4>Zoom in and out</h4>
+                <input type="range" min="0" max="200" step="1" value="100">
+             </div>
+             <div class="container">
+                
+                <p>
                    vulputate ut. Semper quis lectus nulla at volutpat. Elementum integer enim neque volutpat ac tincidunt vitae semper. Mauris ultrices eros in cursus turpis massa tincidunt dui. Auctor eu augue ut lectus arcu bibendum at. Placerat in egestas erat imperdiet sed euismod nisi. Neque sodales ut etiam sit. Semper viverra nam libero justo. Feugiat nibh sed pulvinar proin gravida hendrerit lectus. Tincidunt augue interdum velit euismod in pellentesque massa. Vel eros donec ac odio tempor orci dapibus ultrices. Enim sed faucibus turpis in. Tellus id interdum velit laoreet.
                 </p>
              </div>
           </div>
        </section>
-
-      <section id="section-shinethrough">
+       <section id="section-shinethrough">
           <div class="" id="main-stage">
-              <!-- Page Content -->
-              <div class="container">
-                 
-           
-                 <div class="row">
-                    <div class="col-lg-12 text-center">
-                       
-                       <button class="btn btn-primary" id="mybtn">Click Me</button>
-                       <div class="shine-through">
-                          <div class="avatar-draggable bg1">
-                             <img  class="crop-image" />
-                          </div>
-                       </div>
-                       <div>
-                          <button class="btn">Auto</button>
-                       </div>
-                       <div id="animal-info"></div>
-                    </div>
-                 </div>
-              </div>
+             <!-- Page Content -->
+             <div class="container">
+                <div class="row">
+                   <div class="col-lg-12 text-center">
+                      <div class="shine-through">
+                         <div class="avatar-draggable bg1">
+                            <img  class="crop-image" />
+                         </div>
+                      </div>
+                      <div id="animal-info"></div>
+                   </div>
+                </div>
+             </div>
+          </div>
+       </section>
+       <section id="paraSection">
+          <div id-"innerparaSection">
+          </div>
+       </section>
+       <section id="section-belowPara">
+          <div class="container">
+              <h2 class="headers"> Backgound-Image as Parallax</h2>
+             <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora earum inventore soluta alias est odio facilis qui maxime voluptates aliquam, animi amet cupiditate totam atque laborum excepturi doloribus dolorum hic nobis voluptatibus tenetur autem accusamus! Culpa laboriosam nesciunt qui reiciendis!
+             </p>
+
+             <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora earum inventore soluta alias est odio facilis qui maxime voluptates aliquam, animi amet cupiditate totam atque laborum excepturi doloribus dolorum hic nobis voluptatibus tenetur autem accusamus! Culpa laboriosam nesciunt qui reiciendis!
+             </p>
+
+          </div>
+       </section>
+       <section id="section-footer">
+         <div class="container">
+           <div class="row">
+             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora earum inventore soluta alias est odio facilis qui maxime voluptates aliquam, animi amet cupiditate totam atque laborum excepturi doloribus dolorum hic nobis voluptatibus tenetur autem accusamus! Culpa laboriosam nesciunt qui reiciendis! </p>
            </div>
-      </section>
-      
-      <section id="paraSection">
-        <div id-"innerparaSection">
-
-        </div>
-      </section>
-      <section id="section3">
-        <div class="container">
-          <h3>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora earum inventore soluta alias est odio facilis qui maxime voluptates aliquam, animi amet cupiditate totam atque laborum excepturi doloribus dolorum hic nobis voluptatibus tenetur autem accusamus! Culpa laboriosam nesciunt qui reiciendis!
-          </h3>
-        </div>
-      </section>
+         </div>
+         <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-4 fullCTA" id="fullCTA1"></div>
+                <div class="col-sm-4 fullCTA" id="fullCTA2"></div>
+                <div class="col-sm-4 fullCTA" id="fullCTA3"></div>
+              </div>
+         </div>
+         <div class="container">
+           <div class="row">
+             <div>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora earum inventore soluta alias est odio facilis qui maxime voluptates aliquam, animi amet cupiditate totam atque laborum excepturi doloribus dolorum hic nobis voluptatibus tenetur autem accusamus! Culpa laboriosam nesciunt qui reiciendis! </p>
+             </div>
+           </div>
+         </div>
+       </section>
+       
+       </div>
       <!-- Bootstrap core JavaScript -->
-      
-
       <script src="https://code.jquery.com/jquery-1.12.4.js"></script>
       <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
       <script src="vendor/jquery/jquery.min.js"></script>
